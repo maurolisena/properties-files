@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
+  <diagram name="Página-1" id="DWOhEZKIKwfa1mbyPEAZ">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-1" value="Crear un usuario" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-2" value="Applicacion de gestion de productos" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425.56" y="170" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-4" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;width=12;endSize=3.13;" edge="1" parent="lkafF1muSTVCXnx2NAqZ-2" source="lkafF1muSTVCXnx2NAqZ-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="79" y="70" as="sourcePoint" />
+            <mxPoint x="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-3" value="Login de usuarios" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485.56" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-6" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="lkafF1muSTVCXnx2NAqZ-2" target="lkafF1muSTVCXnx2NAqZ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="665.56" y="200" as="sourcePoint" />
+            <mxPoint x="771.5999999999999" y="197.98000000000002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="725.56" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-7" value="Base de datos" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="160" y="290" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-8" value="Usuarios y gestion de roles y permisos" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-10" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="lkafF1muSTVCXnx2NAqZ-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310.0044444444446" y="290" as="sourcePoint" />
+            <mxPoint x="345.56" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="315.56" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-11" value="Productos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485.56" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="lkafF1muSTVCXnx2NAqZ-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="543.25" y="370" as="sourcePoint" />
+            <mxPoint x="547.8653846153845" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-13" value="Booking" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="725.56" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=14;endSize=7.67;" edge="1" parent="1" source="lkafF1muSTVCXnx2NAqZ-11" target="lkafF1muSTVCXnx2NAqZ-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="399.5" as="sourcePoint" />
+            <mxPoint x="700" y="399.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-15" value="Configracion general y de despliegue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-16" value="Comunicacion entre proyectos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-17" value="Disparador de eventos y mensajes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lkafF1muSTVCXnx2NAqZ-18" value="Notificaciones" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
