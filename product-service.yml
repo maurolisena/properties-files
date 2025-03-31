@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/product_db
+      uri: mongodb://mongo_database:27017/product_db
 
 eureka:
   instance:
@@ -13,4 +13,4 @@ eureka:
     fetch-registry: true
 
 server:
-  port: 0
+  port: 8081
