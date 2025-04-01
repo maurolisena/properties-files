@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/auth_db
-    username: postgres
+    url: jdbc:postgresql://postgresql_database:5432/auth_db
+    username: mlisena
     password: A8424628
     driver-class-name: org.postgresql.Driver
   jpa:
@@ -17,6 +17,7 @@ spring:
     jwt:
       secret: my-secret-key
       expiration-time: 3600
+
 eureka:
   client:
     service-url:
@@ -24,5 +25,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
+
 server:
-  port: 0
+  port: 8083

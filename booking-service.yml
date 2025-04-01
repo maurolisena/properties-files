@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/booking_db
+    url: jdbc:mysql://mysql_database:3306/booking_db
     username: root
     password: A8424628
   jpa:
@@ -16,4 +16,4 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 server:
-  port: 0
+  port: 8082
