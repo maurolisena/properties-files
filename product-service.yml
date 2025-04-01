@@ -1,7 +1,20 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://mongo_database:27017/product_db
+      uri: mongodb://mlisena:A8424628@mongo_database:27017/product_db
+
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: application-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    listener:
+      missing-topics-fatal: false
 
 eureka:
   instance:
