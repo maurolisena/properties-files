@@ -27,3 +27,5 @@ eureka:
 
 server:
   port: 8081
+
+app.test.property: update from message automatically by kafka broker
