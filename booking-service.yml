@@ -13,6 +13,7 @@ spring:
 
 eureka:
   instance:
+    hostname: booking-service
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     service-url.defaultZone: http://eureka-server:8761/eureka/
