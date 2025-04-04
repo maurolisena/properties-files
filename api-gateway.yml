@@ -12,6 +12,19 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://keycloak-server:8889/realms/application-realm
+        registration:
+          spring-cloud-gateway-client:
+            client-id: spring-cloud-gateway-client
+            client-secret: RfYuWLMv2lddlO9hGxygKNkyA1s6alIx
+            provider: keycloak
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://keycloak-server:8889/login/oauth2/code/spring-cloud-gateway-client"
 
 eureka:
   instance:
@@ -23,4 +36,4 @@ eureka:
     fetch-registry: true
 
 server:
-  port: 8891
+  port: 8889
