@@ -18,7 +18,7 @@ spring:
       client:
         provider:
           keycloak:
-            issuer-uri: http://keycloak-server:8080/realms/application-realm
+            issuer-uri: http://localhost:8090/realms/application-realm
         registration:
           spring-cloud-gateway-client:
             client-id: spring-cloud-gateway-client
