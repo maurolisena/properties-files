@@ -1,3 +1,6 @@
+server:
+  port: 8081
+
 spring:
   cloud:
     gateway:
@@ -22,7 +25,7 @@ spring:
             client-secret: springsecret123
             provider: keycloak
             authorization-grant-type: authorization_code
-            redirect-uri: "http://localhost:8889/login/oauth2/code/spring-cloud-gateway-client"
+            redirect-uri: "http://localhost:8081/login/oauth2/code/spring-cloud-gateway-client"
             scope: openid, profile, email
 
 eureka:
@@ -34,9 +37,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
-networks:
-  application-network:
-    external: true
-
-server:
-  port: 8891
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
