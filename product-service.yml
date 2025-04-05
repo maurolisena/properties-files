@@ -1,10 +1,13 @@
+server:
+  port: 8081
+
 spring:
   data:
     mongodb:
       uri: mongodb://mlisena:A8424628@mongo_database:27017/product_db
 
   kafka:
-    bootstrap-servers: kafka:9092
+    bootstrap-servers: kafka:9093
     consumer:
       group-id: application-group
       auto-offset-reset: earliest
@@ -32,5 +35,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
-server:
-  port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
