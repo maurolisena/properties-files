@@ -39,4 +39,4 @@ networks:
     external: true
 
 server:
-  port: 8889
+  port: 8891
