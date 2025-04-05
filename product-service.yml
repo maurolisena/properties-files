@@ -16,6 +16,12 @@ spring:
     listener:
       missing-topics-fatal: false
 
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://keycloak-server:8080/realms/application-realm
+
 eureka:
   instance:
     hostname: product-service
