@@ -13,6 +13,11 @@ spring:
           predicates:
             - Path=/api/products/**
 
+        - id: booking-service
+          uri: lb://BOOKING-SERVICE
+          predicates:
+            - Path=/api/bookings/**
+
   security:
     oauth2:
       resourceserver:
