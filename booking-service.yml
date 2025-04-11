@@ -43,9 +43,9 @@ eureka:
 
 springdoc:
   api-docs:
-    path: /v3/api-docs
+    enabled: true
   swagger-ui:
-    path: /swagger-ui.html
+    enabled: true
 
 management:
   endpoints:
