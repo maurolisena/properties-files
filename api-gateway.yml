@@ -7,6 +7,7 @@ spring:
       discovery:
         locator:
           enabled: true
+          lowerCaseServiceId: true
       routes:
         - id: product-service-api
           uri: lb://PRODUCT-SERVICE
