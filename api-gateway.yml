@@ -11,12 +11,23 @@ spring:
         - id: product-service
           uri: lb://PRODUCT-SERVICE
           predicates:
-            - Path=/api/products/**
-
+        - Path=/api/products/**
+        - id: product-swagger
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/product-service/v3/api-docs/**
+          filters:
+            - StripPrefix=1
         - id: booking-service
           uri: lb://BOOKING-SERVICE
           predicates:
             - Path=/api/bookings/**
+        - id: booking-swagger
+          uri: lb://BOOKING-SERVICE
+          predicates:
+            - Path=/booking-service/v3/api-docs/**
+          filters:
+            - StripPrefix=1
 
   security:
     oauth2:
