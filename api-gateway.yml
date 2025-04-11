@@ -10,27 +10,27 @@ spring:
           lowerCaseServiceId: true
       routes:
         - id: product-service-api
-          uri: lb://PRODUCT-SERVICE
+          uri: lb://product-service
           predicates:
             - Path=/api/products/**
         - id: product-service-docs
-          uri: lb://PRODUCT-SERVICE
+          uri: lb://product-service
           predicates:
             - Path=/product-service/v3/api-docs/**
         - id: product-service-ui
-          uri: lb://PRODUCT-SERVICE
+          uri: lb://product-service
           predicates:
             - Path=/product-service/swagger-ui/**
         - id: booking-service-api
-          uri: lb://BOOKING-SERVICE
+          uri: lb://booking-service
           predicates:
             - Path=/api/bookings/**
         - id: booking-service-docs
-          uri: lb://BOOKING-SERVICE
+          uri: lb://booking-service
           predicates:
             - Path=/booking-service/v3/api-docs/**
         - id: booking-service-ui
-          uri: lb://BOOKING-SERVICE
+          uri: lb://booking-service
           predicates:
             - Path=/booking-service/swagger-ui/**
 
