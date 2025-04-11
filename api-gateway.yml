@@ -12,22 +12,15 @@ spring:
           uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/products/**
-        - id: product-swagger
-          uri: lb://PRODUCT-SERVICE
-          predicates:
             - Path=/product-service/v3/api-docs/**
-          filters:
-            - StripPrefix=1
+            - Path=/product-service/swagger-ui/**
+
         - id: booking-service
           uri: lb://BOOKING-SERVICE
           predicates:
             - Path=/api/bookings/**
-        - id: booking-swagger
-          uri: lb://BOOKING-SERVICE
-          predicates:
             - Path=/booking-service/v3/api-docs/**
-          filters:
-            - StripPrefix=1
+            - Path=/booking-service/swagger-ui/**
 
   security:
     oauth2:
@@ -55,6 +48,14 @@ eureka:
     service-url.defaultZone: http://eureka-server:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: product-service
+        url: /product-service/v3/api-docs
+      - name: booking-service
+        url: /booking-service/v3/api-docs
 
 management:
   endpoints:
