@@ -11,7 +11,7 @@ spring:
         - id: product-service
           uri: lb://PRODUCT-SERVICE
           predicates:
-        - Path=/api/products/**
+            - Path=/api/products/**
         - id: product-swagger
           uri: lb://PRODUCT-SERVICE
           predicates:
