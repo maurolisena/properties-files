@@ -8,18 +8,29 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: product-service
+        - id: product-service-api
           uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/products/**
+        - id: product-service-docs
+          uri: lb://PRODUCT-SERVICE
+          predicates:
             - Path=/product-service/v3/api-docs/**
+        - id: product-service-ui
+          uri: lb://PRODUCT-SERVICE
+          predicates:
             - Path=/product-service/swagger-ui/**
-
-        - id: booking-service
+        - id: booking-service-api
           uri: lb://BOOKING-SERVICE
           predicates:
             - Path=/api/bookings/**
+        - id: booking-service-docs
+          uri: lb://BOOKING-SERVICE
+          predicates:
             - Path=/booking-service/v3/api-docs/**
+        - id: booking-service-ui
+          uri: lb://BOOKING-SERVICE
+          predicates:
             - Path=/booking-service/swagger-ui/**
 
   security:
@@ -62,3 +73,6 @@ management:
     web:
       exposure:
         include: "*"
+  endpoint:
+    refresh:
+      enabled: true
